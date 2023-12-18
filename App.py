@@ -50,8 +50,8 @@ def prepare_image(img_path):
 
 
 def run():
-    st.title("Fruits🍍-Vegetable🍅 Classification")
-    img_file = st.file_uploader("Choose an Image", type=["jpg", "png"])
+    st.title("Buah🍍-Sayur🍅 Klasifikasi")
+    img_file = st.file_uploader("Pilih Gambar", type=["jpg", "png"])
     if img_file is not None:
         img = Image.open(img_file).resize((250, 250))
         st.image(img, use_column_width=False)
